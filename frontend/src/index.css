@@ -1,0 +1,103 @@
+:root {
+  --primary-color: #2ECC71;
+  --primary-hover: #27AE60;
+  --secondary-color: #4ECDC4;
+  --accent-color: #45B7AF;
+  --text-color: #2D3436;
+  --light-gray: #f8f9fa;
+  --danger-color: #E74C3C;
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: #fff;
+}
+
+.btn-recipe {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-recipe:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  color: white;
+}
+
+.recipe-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
+}
+
+.jumbotron {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+}
+
+/* Button styles */
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+/* Navbar brand color */
+.navbar-brand {
+  color: var(--primary-color) !important;
+}
+
+/* Custom danger button */
+.btn-outline-danger {
+  color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+  color: white;
+}
+
+/* Add responsive padding for mobile devices */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
